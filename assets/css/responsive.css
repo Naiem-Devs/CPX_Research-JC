@@ -1,0 +1,558 @@
+/* Big screen :1200px. */
+@media (min-width: 1200px) and (max-width: 1500px) {
+.container{
+    padding: 0 30px;
+}
+
+}
+
+
+/* Normal screen :992px. */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .container{
+        padding: 0 30px;
+    }
+    .Counter-blk span {
+        font-size: 70px;
+    }
+    
+    .Counter-blk p {
+        font-size: 18px;
+    }
+    .survey_img i img {
+        width: 100%;
+    }
+    
+    .sec_title h1 {
+        font-size: 48px;
+    }
+    
+    .hero_left h1 {
+        font-size: 60px;
+    }
+    
+    h1 {
+        font-size: 36px;
+    }
+    .band_logo ul li a img {
+        max-width: 175px;
+    }
+    .band_logo ul {
+        max-width: 100%;
+    }
+    
+    .earn_text ul li {
+        margin-right: 0;
+        scale: .9;
+    }
+    
+    .earn_text ul {
+        width: max-content;
+    }
+    .owl-nav {
+        width: 100px;
+        left: 50%;
+        bottom: 0px;
+        top: auto;
+        z-index: 99;
+        transform: translateX(-50%);
+    }
+
+}
+
+ 
+/* Tablet screen :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+    .band_logo ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+.band_logo ul li {
+    margin: 0 20px 20px;
+}
+.hero_link {
+    margin-top: 30px;
+}
+    .hero_left {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    
+    .hero_left h1 {
+        margin: auto;
+        margin-bottom: 24px;
+        font-size: 50px;
+        max-width: 500px;
+    }
+    
+    .Counter-blk span {
+        font-size: 60px;
+    }
+    .Counter-blk p {
+        font-size: 20px;
+    }
+    .survey_img {
+        flex-direction: column-reverse;
+        display: flex;
+    }
+    
+    section.survey-Area .row:first-child {
+        flex-direction: column-reverse;
+    }
+    
+    .survey_text {
+        margin: auto;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    
+    .survey-Area {
+        margin: 70px 0 100px;
+    }
+    
+    .sec_title h1 {
+        font-size: 40px;
+        max-width: 600px;
+        margin: auto;
+        margin-bottom: 16px;
+    }
+    .svc_blk {
+        max-width: 500px;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+
+h1 {
+    font-size: 36px;
+}
+    
+    .earn_text p {
+        margin: 30px auto;
+    }
+    
+    .earn_img {
+        text-align: center;
+    }
+    
+    .earn_img img {
+        max-width: 500px;
+        margin: auto;
+    }
+    .earn_text {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    
+    .row_flexD {
+        flex-direction: column-reverse;
+    }
+    
+    .mb-100 {
+        margin-bottom: 70px;
+    }
+    
+    .pd_card {
+        max-width: 500px;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+    
+    .feedback_blk {
+        max-width: 641px;
+        margin: auto;
+    }
+    .owl-nav {
+        width: 100px;
+        left: 50%;
+        bottom: 0px;
+        top: auto;
+        z-index: 99;
+        transform: translateX(-50%);
+    }
+    .f_mid {
+        transform: translateX(13%);
+    }
+    .FAQ_accordion.wrapper {
+        max-width: 640px;
+        margin: auto;
+    }
+
+}
+
+ 
+/* small screen :320px. */
+@media (max-width: 767px) {
+    .band_logo ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    .header-area {
+        padding: 16px 0;
+    }
+    
+    .logo-area a img {
+        max-width: 175px;
+    }
+.band_logo ul li {
+    margin: 0 10px 20px;
+    flex: 0 0 30%;
+    height: 45px;
+}
+.hero_link {
+    margin-top: 20px;
+}
+    .hero_left {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    
+    .hero_left h1 {
+        margin: auto;
+        margin-bottom: 10px;
+        font-size: 30px;
+        max-width: 339px;
+    }
+    
+    .Counter-blk span {
+        font-size: 40px;
+    }
+    .Counter-blk p {
+        font-size: 16px;
+    }
+    .survey_img {
+        flex-direction: column-reverse;
+        display: flex;
+    }
+
+.survey_img i img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+    
+    section.survey-Area .row:first-child {
+        flex-direction: column-reverse;
+    }
+    
+    .survey_text {
+        margin: auto;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    
+    .survey-Area {
+        margin: 50px 0 50px;
+    }
+    
+    .sec_title h1 {
+        font-size: 28px;
+    }
+    .svc_blk {
+        max-width: 340px;
+        margin: auto;
+        margin-bottom: 30px;
+        flex-direction: unset;
+        flex-wrap: wrap;
+        text-align: left;
+        min-height: auto;
+        padding: 25px;
+        margin-bottom: 15px;
+    }
+
+.svc_blk i {
+    width: 33px;
+    height: 33px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+.svc_blk i img {
+    width: 100%;
+}
+
+.svc_blk p {
+    flex: 0 0 100%;
+    font-size: 14px;
+}
+    
+    .earn_text p,.row_flexD .earn_text p {
+        max-width: 344px;
+        margin: 15px auto;
+        font-size: 14px;
+    }
+
+p {}
+    
+    .earn_img {
+        text-align: center;
+    }
+
+.earn_img.earn_img2 {
+    margin-left: -21px;
+}
+    
+    .earn_img img {
+        max-width: 300px;
+        margin: auto;
+    }
+    .earn_text {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    
+    .row_flexD {
+        flex-direction: column-reverse;
+    }
+    
+    .mb-100 {
+        margin-bottom: 50px;
+    }
+
+.FAQ-Area {
+    margin-bottom: 90px;
+}
+    
+    .pd_card {
+        max-width: 400px;
+        margin: auto;
+        margin-bottom: 15px;
+        min-height: auto;
+        padding: 25px;
+    }
+    
+    .feedback_blk {
+        max-width: 400px;
+        margin: auto;
+        min-height: auto;
+        padding: 25px;
+        padding-bottom: 50px;
+        border-radius: 15px;
+    }
+
+.feedback_blk i {
+    font-size: 9px !important;
+}
+    .owl-nav {
+        width: 70px;
+        left: 50%;
+        bottom: 0px;
+        top: auto;
+        z-index: 99;
+        transform: translateX(-50%);
+    }
+
+.feedback_slider .owl-stage-outer {
+    padding-bottom: 50px;
+}
+    .f_mid {
+    margin: 25px auto;
+    }
+
+.f_mid a.thm_btn {position: absolute;top: -70px;left: 50%;transform: translateX(-50%);}
+    .FAQ_accordion.wrapper {
+        max-width: 400px;
+        margin: auto;
+    }
+    .Counter_wrp {
+        flex-direction: column;
+        border-radius: 93.5px;
+        width: max-content;
+        margin: auto;
+        padding: 32px 50px;
+    }
+
+.Counter_wrp {}
+    .Counter-blk {
+        padding: 15px 0;
+    }
+    
+    .hero_left p {
+        font-size: 14px;
+        max-width: 260px;
+        margin: auto;
+    }
+    
+    a.thm_btn span {
+        font-size: 14px;
+    }
+    
+    a.thm_btn {
+        padding: 9px 18px;
+        height: 41px;
+        border-width: 2px;
+    }
+    
+    .hero_area {
+        padding: 30px 0 50px;
+        background-position: 10%;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    .band_logo ul li a img {
+        max-width: 130px;
+    }
+    
+    .svc_blk h1 {
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+    
+    section.service-Area .sec_title {
+        margin-bottom: 30px;
+    }
+    
+    .earn_title {
+        margin-bottom: 40px;
+    }
+    
+    .earn_text h1 {
+        font-size: 20px;
+        margin-bottom: 0;
+    }
+    .earn_text ul li a img {
+        max-width: 110px;
+        height: 40px;
+    }
+    
+    .earn_text ul li {
+        margin-right: 5px;
+    }
+    
+    .earn_text ul {
+        margin: 20px 0;
+    }
+    
+    .sec_title {
+        margin-bottom: 25px;
+    }
+    
+    .pd_btn_grp {
+        margin-bottom: 30px;
+    }
+    
+    h1 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    
+    .pd_card_title h1 span {
+        font-size: 12px;
+    }
+    
+    .pd_card_top a {
+        font-size: 14px;
+    }
+    
+    .pd_card_title i img {
+        width: 30px;
+    }
+    
+    .pd_card_title i {
+        margin-right: 14px;
+    }
+    
+    p {
+        font-size: 14px;
+        line-height: 1.3;
+    }
+    
+    .pd_card p {
+        margin-top: 10px;
+    }
+    
+    .feedback_blk h4 {
+        font-size: 16px;
+        margin-bottom: 13px;
+    }
+    
+    .feedback_blk a {
+        font-size: 14px;
+        bottom: 21px;
+    }
+    
+    .owl-item:after {
+        display: none;
+    }
+    
+    .feedback_blk span {
+        top: 15px;
+    }
+    
+    .wrapper .accordion_item {
+        padding: 15px 25px;
+        margin-bottom: 15px;
+    }
+    
+    .wrapper .accordion_item .accordion_tab .arrow {
+        top: 10px;
+        right: -8px;
+    }
+    
+    .wrapper .accordion_item .accordion_tab {
+        font-size: 14px;
+    }
+    
+    .wrapper .accordion_item .accordion_content p {
+        line-height: 1.3;
+        padding-top: 10px;
+    }
+    .f_left {
+        text-align: center;
+    }
+    
+    .f_left a img {
+        margin-bottom: 20px;
+    }
+    
+    .f_mid ul li a {
+        font-size: 16px;
+    }
+    
+    .f_mid ul li {
+        display: block;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+    
+    .f_-right {
+        text-align: center;
+        float: unset;
+    }
+    
+    .f_-right ul li {
+        font-size: 14px;
+    }
+    
+    .f_left ul li {
+        margin: 0 10px;
+    }
+    
+    .f_btm {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .f_btm a {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+ 
+}
+ 
+/* Large Mobile screen :480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+.container {width:450px}
+.Counter_wrp {
+    flex-direction: unset;
+    padding: 30px 20px;
+    width: 100%;
+}
+
+.Counter-blk {padding: 0 13px;}
+
+section.Counter-Area .container {width: 95%;}
+}
