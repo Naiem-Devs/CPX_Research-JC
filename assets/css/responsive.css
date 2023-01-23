@@ -216,10 +216,10 @@ h1 {
     }
     
     .Counter-blk span {
-        font-size: 40px;
+        font-size: 38px;
     }
     .Counter-blk p {
-        font-size: 16px;
+        font-size: 12px;
     }
     .survey_img {
         flex-direction: column-reverse;
@@ -577,6 +577,18 @@ p {}
  
 }
  
+@media only screen and (min-width: 380px) and (max-width: 767px){
+    .Counter_wrp{
+    flex-direction: unset;
+    padding: 0px 15px;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.Counter_wrp .Counter-Area {
+    width: 100%;
+}
+}
 /* Large Mobile screen :480px. */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
 .container {width:450px}
@@ -584,9 +596,12 @@ p {}
     flex-direction: unset;
     padding: 30px 20px;
     width: 100%;
+    max-width: 470px;
 }
 
 .Counter-blk {padding: 0 13px;}
 
 section.Counter-Area .container {width: 95%;}
 }
+
+
