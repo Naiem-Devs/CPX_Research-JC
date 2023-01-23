@@ -557,7 +557,19 @@ section.service-Area .sec_title {
 .text-center {
 }
 .svc_blk {min-height: 280px;background: #FFFFFF;
-/* Card Shadow */box-shadow: 0px 4px 12px rgba(30, 30, 30, 0.06);border-radius: 12px;text-align: center;display: flex;align-items: center;flex-direction: column;padding: 32px;}
+/* Card Shadow */box-shadow: 0px 4px 12px rgba(30, 30, 30, 0.06);border-radius: 12px;text-align: center;display: flex;align-items: center;flex-direction: column;padding: 32px;position: relative;z-index: 1;overflow: hidden;}
+ 
+.service-Area .svc_blk:hover:after {
+    opacity: 0.24;
+    filter: blur(80px);
+    top: 61%;
+    right: -100%;
+}
+ 
+.service-Area .sv1:hover:after {
+    background: linear-gradient(54.22deg, #F3696E -6.81%, #F8A902 122.62%);
+
+}
 
 .svc_blk p {
     font-size: 18px;
@@ -578,8 +590,7 @@ section.service-Area .sec_title {
 
   /*=========== -Area Start ==========*/
   
-.earn-Area {
-}
+.earn-Area {overflow: hidden;}
 
 section.earn-Area .row {
     align-items: center;
@@ -624,7 +635,25 @@ section.earn-Area .row {
 .row_flexD .earn_text p {
     max-width: 450px;
 }
-.earn_img {
+.earn_img {position: relative;}
+
+.row_flexD .earn_img:before {
+    right: 10%;
+    transform: rotate(6.99deg);
+}
+
+.earn_img:before {
+    content: "";
+    position: absolute;
+    width: 1100px;
+    height: 265px;
+    right: -85%;
+    top: 0;
+    background: #FFFFFF;
+    opacity: 0.2;
+    border-radius: 257.5px;
+    z-index: -1;
+    transform: rotate(-10.31deg);
 }
 
 .earn_img img {
@@ -642,8 +671,7 @@ section.earn-Area .row {
 
   /*=========== -Area Start ==========*/
   
-.product-Area {
-}
+.product-Area {background: rgb(255 255 255 / 20%);border-radius: 263px 305px 200px 156px;padding: 50px 0 30px;margin-bottom: 70px;}
 .product_title {
 }
 .pd_btn_grp {margin-bottom: 50px;}
@@ -654,7 +682,26 @@ section.earn-Area .row {
 .active {
 }
 .pd_card {background: #FFFFFF;
-/* Card Shadow */box-shadow: 0px 4px 12px rgba(30, 30, 30, 0.06);border-radius: 12px;margin-top: 30px;min-height: 220px;padding: 32px;}
+/* Card Shadow */box-shadow: 0px 4px 12px rgba(30, 30, 30, 0.06);border-radius: 12px;margin-top: 30px;min-height: 220px;padding: 32px;position: relative;overflow: hidden;z-index: 1;transition: .3s;}
+
+.pd_card:hover:after, .svc_blk:hover::after {
+    opacity: 0.20;
+    top: 84px;
+    right: -290px;
+}
+
+.pd_card:after,.svc_blk::after {
+    content: "";
+    position: absolute;
+    width: 570px;
+    height: 200px;
+    top: 115px;
+    right: -333px;
+    z-index: -1;
+    opacity: 0;
+    filter: blur(80px);
+    transition: all .3s ease-in-out;
+}
 
 .pd_card p {
     margin-bottom: 0;
@@ -687,24 +734,42 @@ section.earn-Area .row {
     text-fill-color: transparent;
 }
 
-.pc1{
+.pc1,.pd1:hover:after,.sv1:hover:after{
     background: linear-gradient(79.02deg, #FF0F3A 37.3%, #F89B29 131.35%);
 }
-.pc2{
+.pc2,.pd2:hover:after{
     background: linear-gradient(78.57deg, #5E8BFF 21.69%, #5E8BFF 21.69%, #60EFFF 110.42%);
 }
-.pc3{
+.pc3,.pd3:hover:after,.sv2:hover:after{
     background: linear-gradient(74.34deg, #7277F1 19.36%, #ED71AD 129.24%, #ED71AD 129.25%);
 }
-.pc4{
+.pc4,.pd4:hover:after,.sv3:hover:after{
     background: linear-gradient(78.57deg, #5E8BFF 21.69%, #5E8BFF 21.69%, #60EFFF 110.42%);
 }
+
+.pd1:hover:after{}
+.pd2:hover:after{}
+.pd3:hover:after{}
+.pd4:hover:after{}
   /*=========== -Area End ==========*/
 
 
   /*=========== -Area Start ==========*/
   
-.feedback-Area {overflow: hidden;margin-bottom: 30px;position: relative;}
+.feedback-Area {overflow: hidden;margin-bottom: 30px;position: relative;padding-top: 40px;}
+
+.feedback-Area:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -30px;
+    left: 0;
+    border-radius: 234.5px 234.5px 216px 107px;
+    background: #FFFFFF;
+    z-index: -1;
+    opacity: .2;
+}
 .feed_title {
 }
 .feedback_slider {
@@ -867,6 +932,21 @@ footer.footer-Area hr {
     margin-bottom: 0;
 }
 .f_mid {max-width: 228px;margin: auto;text-align: center;}
+
+.f_mid a.top_btn {
+}
+
+.f_mid a.top_btn:hover p {
+    opacity: 0;
+    width: 0;
+    display: none;
+}
+
+.f_mid a.top_btn p {
+    margin-bottom: 0;
+    display: inline-block;
+    transition: 0.3s;
+}
 
 .f_mid a i {
     margin-left: 10px;

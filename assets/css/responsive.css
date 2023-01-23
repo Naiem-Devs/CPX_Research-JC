@@ -260,6 +260,12 @@ h1 {
         margin-bottom: 15px;
     }
 
+.service-Area .svc_blk:hover:after {
+    top: 0;
+    right: -120%;
+    opacity: .20;
+}
+
 .svc_blk i {
     width: 33px;
     height: 33px;
@@ -293,6 +299,19 @@ p {}
 .earn_img.earn_img2 {
     margin-left: -21px;
 }
+
+.earn_img:before {
+    height: 150px;
+    left: 10%;
+    width: 620px;
+}
+
+.row_flexD .earn_img:before {
+    right: 15%;
+    left: auto;
+}
+
+::before {}
     
     .earn_img img {
         max-width: 300px;
@@ -311,6 +330,15 @@ p {}
         margin-bottom: 50px;
     }
 
+.feedback-Area {}
+
+.feedback-Area:before {border-radius: 100px;top: 0;}
+
+.product-Area {
+    border-radius: 84px;
+    margin-bottom: 30px;
+}
+
 .FAQ-Area {
     margin-bottom: 90px;
 }
@@ -322,6 +350,12 @@ p {}
         min-height: auto;
         padding: 25px;
     }
+
+.pd_card:hover:after {
+    top: 20%;
+    right: -105%;
+    opacity: 0.2;
+}
     
     .feedback_blk {
         max-width: 400px;
