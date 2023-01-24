@@ -377,15 +377,8 @@ a.thm_btn span {
 a.thm_btn.active {
   box-shadow: 2px 1000px 1px #f6f6f600 inset;
 }
-a.thm_btn:hover span,
-a.thm_btn.active span
-{
-
-  box-shadow: none;
-  color: white;
-  background: unset;
-  -webkit-text-fill-color: #ffffff;
-}
+a.thm_btn:hover span, a.thm_btn.active span
+{-webkit-text-fill-color: #ffffff;}
 
 
 
@@ -411,12 +404,41 @@ a.thm_btn.active span
     font-size: 18px;
 }
 
+p.or {
+    margin-left: 5px;
+}
+
 .hero_left h1 {
     font-size: 67px;
     line-height: 1.1;
     margin-bottom: 24px;
-    letter-spacing: -0.04em;
-    max-width: 690px;
+    /* letter-spacing: -0.04em; */
+    max-width: 651px;
+}
+
+.hero_left h1 p {
+    font-size: unset;
+    margin-bottom: 0;
+    display: inline-block;
+}
+
+p.hp3 {
+    letter-spacing: 2px;
+}
+
+p.hp2 {
+    letter-spacing: -2px;
+}
+
+.hero_left h1 span {
+    display: inline-block;
+    padding-right: 5px;
+}
+
+span.hp4 {letter-spacing: 3px;}
+
+span.hp1 {
+    letter-spacing: -3px;
 }
   .hero_link {
   margin-top: 50px;
@@ -825,16 +847,26 @@ section.earn-Area .row {
 }
 
 
-.owl-nav {
+.feedback_slider .owl-nav {
   display: flex;
   justify-content: space-between;
   position: absolute;
-  top: 40%;
+  top: 35%;
   width: 110%;
   font-size: 22px;
   left: -5%;
   transform: translateY(-60%);
 }
+
+.feedback_slider .owl-nav .owl-prev{
+    position: absolute;
+    left: 0;
+}
+.feedback_slider .owl-nav .owl-next{
+    position: absolute;
+    right: 0;
+}
+
   /*=========== -Area End ==========*/
 
 
@@ -886,8 +918,9 @@ section.earn-Area .row {
 
 .wrapper .accordion_item .accordion_content{
 	background: #fff;
-	display: none;
-	transition: all 0.3s ease;
+	transition: all 0.5s ease-in-out;
+	height: 0;
+	opacity: 0;
 }
 
 .wrapper .accordion_item .accordion_content p{
@@ -899,8 +932,10 @@ section.earn-Area .row {
 }
 
 .wrapper .accordion_item .accordion_tab.active + .accordion_content{
-	display: block;	
-	transition: all 0.3s ease;
+	/* display: block; */
+	transition: all 0.5s ease-in-out;
+	height: auto;
+	opacity: 1;
 }
   /*=========== -Area End ==========*/
 
@@ -933,8 +968,7 @@ footer.footer-Area hr {
 }
 .f_mid {max-width: 228px;margin: auto;text-align: center;}
 
-.f_mid a.top_btn {
-}
+.f_mid a.top_btn {background: #fff;}
 
 .f_mid a.top_btn:hover p {
     opacity: 0;
